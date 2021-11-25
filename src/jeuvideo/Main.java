@@ -34,13 +34,13 @@ public class Main extends Joueur {
 				if (choix3 == 1) {
 					if(joueur1.getForce()*joueur1.getSante()*joueur1.getExperience()*puissanceJoueur1>joueur2.getForce()*joueur2.getSante()*joueur2.getExperience()*puissanceJoueur2) {
 						joueur1.setForce(joueur1.getForce()+1);
-						joueur2.setSante(joueur1.getSante()-1);
+						joueur2.setSante(joueur2.getSante()-1);
 					}else {
 						joueur1.setSante(joueur1.getSante()-1);
-						joueur2.setForce(joueur1.getForce()+1);
+						joueur2.setForce(joueur2.getForce()+1);
 					}
 					joueur1.setExperience(joueur1.getExperience()+1);
-					joueur2.setExperience(joueur1.getExperience()+1);
+					joueur2.setExperience(joueur2.getExperience()+1);
 					if (joueur2.getSante() <= 0) {
 						System.out.println(joueur1.getNom() + "est vainqueur, " + joueur2.getNom() + "a perdu la partie");
 						break;
