@@ -34,9 +34,9 @@ public class Main extends Joueur {
 				if (choix3 == 1) {
 					if(joueur1.getForce()*joueur1.getSante()*joueur1.getExperience()*puissanceJoueur1>joueur2.getForce()*joueur2.getSante()*joueur2.getExperience()*puissanceJoueur2) {
 						joueur1.setForce(joueur1.getForce()+1);
-						joueur2.setForce(joueur1.getSante()-1);
+						joueur2.setSante(joueur1.getSante()-1);
 					}else {
-						joueur1.setForce(joueur1.getSante()-1);
+						joueur1.setSante(joueur1.getSante()-1);
 						joueur2.setForce(joueur1.getForce()+1);
 					}
 					joueur1.setExperience(joueur1.getExperience()+1);
@@ -53,10 +53,10 @@ public class Main extends Joueur {
 				if (choix4 == 1) {
 					if(joueur1.getForce()*joueur1.getSante()*joueur1.getExperience()*puissanceJoueur1>joueur2.getForce()*joueur2.getSante()*joueur2.getExperience()*puissanceJoueur2) {
 						joueur1.setForce(joueur1.getForce()+1);
-						joueur2.setForce(joueur1.getSante()-1);
+						joueur2.setSante(joueur2.getSante()-1);
 					}else {
-						joueur1.setForce(joueur1.getSante()-1);
-						joueur2.setForce(joueur1.getForce()+1);
+						joueur1.setSante(joueur1.getSante()-1);
+						joueur2.setForce(joueur2.getForce()+1);
 					}
 					joueur1.setExperience(joueur1.getExperience()+1);
 					joueur2.setExperience(joueur2.getExperience()+1);
